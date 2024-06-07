@@ -15,5 +15,9 @@ describe("String Calculator", () => {
       expect(add("1,5")).toBe(6);
     });
 
+    it("should handle large numbers", () => {
+      expect(add("1000,2000,3000,4000")).toBe(10000);
+    });
+
   });
 });
