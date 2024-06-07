@@ -4,7 +4,7 @@ function add(numbers: string): number {
   let integerArray: number[] = stringArray.map(Number);
   if (withoutWhiteSpaces === "") return 0;
   else if (integerArray.length === 1) return integerArray[0];
-  else return Math.random();
+  else return integerArray[0] + integerArray[1];
 }
 
 export { add };
